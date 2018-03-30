@@ -1,6 +1,6 @@
 <template>
   <div id='trt'>
-    <Checkbox @check="onCheck" :isChecked="input.checked"/>
+    <Checkbox @click="onClick" :isChecked="input.checked"/>
     <span> {{ input.text }}</span>
   </div>
 </template>
@@ -13,8 +13,8 @@ export default {
     Checkbox
   },
   methods: {
-    onCheck () {
-      this.$emit('done')
+    onClick () {
+      this.$emit('click')
     }
   }
 }

@@ -6,7 +6,7 @@
                  v-for="i in inputs.length"
                  :key="i"
                  :input="inputs[i-1]"
-                 @done="update(i-1)"/>
+                 @click="update(i-1)"/>
     </div>
     <div id='addBar'>
       <button @click="add()">Add</button>
